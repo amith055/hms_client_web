@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A modern and clean hostel common area",
+      "imageUrl": "https://picsum.photos/seed/hostel-common-room/600/400",
+      "imageHint": "hostel common area"
+    },
+    {
+      "id": "students-list",
+      "description": "A diverse group of students smiling",
+      "imageUrl": "https://picsum.photos/seed/students-smiling/800/600",
+      "imageHint": "college students"
+    },
+    {
+      "id": "food-prediction",
+      "description": "A kitchen preparing large quantities of food",
+      "imageUrl": "https://picsum.photos/seed/kitchen-food-prep/800/600",
+      "imageHint": "canteen kitchen"
+    }
+  ]
 }
