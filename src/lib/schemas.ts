@@ -20,5 +20,18 @@ export const RegisterSchema = z.object({
   password: z.string().min(6, { message: "Password must be at least 6 characters." }),
 });
 
+export const StudentSchema = z.object({
+  name: z.string().min(2, { message: "Name is required." }),
+  studentId: z.string().min(1, { message: "Student ID is required." }),
+  email: z.string().email({ message: "Please enter a valid email." }),
+  phone: z.string().regex(/^\d{10}$/, { message: "Please enter a valid 10-digit mobile number." }),
+  guardianName: z.string().min(2, { message: "Guardian's name is required." }),
+  guardianPhone: z.string().regex(/^\d{10}$/, { message: "Please enter a valid 10-digit mobile number." }),
+  roomNumber: z.string().min(1, { message: "Room number is required." }),
+  bedNumber: z.string().min(1, { message: "Bed number is required." }),
+});
+
+
 export type LoginValues = z.infer<typeof LoginSchema>;
 export type RegisterValues = z.infer<typeof RegisterSchema>;
+export type StudentValues = z.infer<typeof StudentSchema>;

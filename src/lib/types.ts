@@ -30,3 +30,17 @@ export type Hostel = {
   adminUid: string;
   menu?: WeeklyMenu;
 };
+
+export type Student = {
+    id: string;
+    name: string;
+    studentId: string;
+    email: string;
+    phone: string;
+    guardianName: string;
+    guardianPhone: string;
+    roomNumber: string;
+    bedNumber: string;
+    hostelId: string;
+    createdAt: Date;
+};

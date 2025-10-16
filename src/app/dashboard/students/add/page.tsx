@@ -1,3 +1,4 @@
+import { AddStudentForm } from "@/components/dashboard/add-student-form";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AddStudentPage() {
@@ -7,10 +8,10 @@ export default function AddStudentPage() {
             <Card>
                 <CardHeader>
                     <CardTitle>Student Admission Form</CardTitle>
-                    <CardDescription>Fill in the details to add a new student.</CardDescription>
+                    <CardDescription>Fill in the details to add a new student to your hostel.</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p>Feature under development.</p>
+                    <AddStudentForm />
                 </CardContent>
             </Card>
         </div>
